@@ -1,0 +1,104 @@
+.card {
+  background: var(--roa-surface);
+  border: 1px solid var(--roa-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid var(--roa-border);
+  background: var(--roa-card);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.nameInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--roa-border);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 140px;
+  padding: 2px 4px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.nameInput:focus {
+  border-color: var(--roa-accent2);
+}
+
+.scoreBox {
+  text-align: right;
+}
+
+.scoreNums {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.scoreDivider {
+  color: var(--roa-muted);
+  font-size: 16px;
+}
+
+.scoreLabel {
+  font-size: 10px;
+  color: var(--roa-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.progressWrap {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.progressFill {
+  height: 3px;
+  transition: width 0.3s;
+}
+
+.charGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(62px, 1fr));
+  gap: 8px;
+  padding: 14px;
+}
+
+.empty {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--roa-muted);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

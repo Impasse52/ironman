@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap');
+
+:root {
+  --roa-bg: #0d0f14;
+  --roa-surface: #161923;
+  --roa-card: #1e2433;
+  --roa-border: #2e3650;
+  --roa-accent: #e84545;
+  --roa-accent2: #4a9eff;
+  --roa-gold: #f5a623;
+  --roa-text: #e8ecf4;
+  --roa-muted: #7a87a3;
+  --roa-green: #4caf7d;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--roa-bg);
+  color: var(--roa-text);
+  font-family: 'Barlow', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}

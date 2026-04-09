@@ -1,0 +1,30 @@
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+}
+
+.inner {
+  background: var(--roa-card);
+  border: 1px solid var(--roa-gold);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: var(--roa-gold);
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+
+.sub {
+  color: var(--roa-muted);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

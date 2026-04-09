@@ -1,0 +1,109 @@
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+}
+
+.banner {
+  background: var(--roa-card);
+  border: 1px solid var(--roa-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--roa-muted);
+  margin-bottom: 10px;
+}
+
+.matchup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.matchupEntry {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.matchupPlayer {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.matchupChar {
+  font-size: 0.9rem;
+  color: var(--roa-muted);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.vs {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  color: var(--roa-border);
+  margin: 0 4px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.winnerBtn {
+  flex: 1;
+  min-width: 100px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 11px 10px;
+  cursor: pointer;
+  border: 1px solid;
+  transition: all 0.15s;
+}
+
+.winnerBtn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.15);
+}
+
+.winnerBtn:active {
+  transform: translateY(0);
+}
+
+.undoBtn {
+  flex: 0 0 auto;
+  background: transparent;
+  border: 1px solid var(--roa-border);
+  color: var(--roa-muted);
+  border-radius: 6px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.15s;
+}
+
+.undoBtn:hover {
+  border-color: var(--roa-muted);
+  color: var(--roa-text);
+}

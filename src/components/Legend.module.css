@@ -1,0 +1,27 @@
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 0 1rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--roa-muted);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid;
+}
