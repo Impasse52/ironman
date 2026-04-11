@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { CHARACTERS } from '../data/characters';
+import { ROA2_CHARS, SSBM_CHARS } from '../data/characters';
 import { shuffle } from '../utils/shuffle';
 
 function makePlayers(count) {
@@ -15,6 +15,13 @@ export function useIronman() {
   const [players, setPlayers] = useState(() => makePlayers(2));
   const [generated, setGenerated] = useState(false);
   const [round, setRound] = useState(0);
+  const [mode, setMode] = useState(0);
+
+  let characters = ROA2_CHARS;
+
+  if (mode == 0) { characters = ROA2_CHARS }
+  else if (mode == 1) { characters = SSBM_CHARS }
+
 
   const setPlayerCount = useCallback((n) => {
     setPlayerCountState(n);
@@ -25,11 +32,11 @@ export function useIronman() {
 
   const generate = useCallback(() => {
     setPlayers((prev) =>
-      prev.map((p) => ({ ...p, sequence: shuffle(CHARACTERS), results: [] }))
+      prev.map((p) => ({ ...p, sequence: shuffle(characters), results: [] }))
     );
     setGenerated(true);
     setRound(0);
-  }, []);
+  }, [mode]);
 
   const reset = useCallback(() => {
     setPlayers((prev) =>
@@ -72,15 +79,15 @@ export function useIronman() {
     );
   }, []);
 
-  const totalRounds = CHARACTERS.length;
+  const totalRounds = characters.length;
   const isDone = generated && round >= totalRounds;
 
   const overallLeader = isDone
     ? (() => {
-        const wins = players.map((p) => p.results.filter((r) => r === 'win').length);
-        const max = Math.max(...wins);
-        return { name: players[wins.indexOf(max)].name, wins: max };
-      })()
+      const wins = players.map((p) => p.results.filter((r) => r === 'win').length);
+      const max = Math.max(...wins);
+      return { name: players[wins.indexOf(max)].name, wins: max };
+    })()
     : null;
 
   return {
@@ -97,5 +104,7 @@ export function useIronman() {
     declareWinner,
     undoRound,
     renamePlayer,
+    mode,
+    setMode,
   };
 }

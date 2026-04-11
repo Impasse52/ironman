@@ -1,4 +1,4 @@
-import { PLAYER_COLORS, CHARACTERS } from '../data/characters';
+import { PLAYER_COLORS, ROA2_CHARS } from '../data/characters';
 import CharSlot from './CharSlot';
 import styles from './PlayerCard.module.css';
 

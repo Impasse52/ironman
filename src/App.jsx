@@ -22,11 +22,16 @@ export default function App() {
     declareWinner,
     undoRound,
     renamePlayer,
+    mode,
+    setMode,
   } = useIronman();
 
   return (
     <div className={styles.app}>
-      <Header />
+      <Header 
+        mode={mode}
+        setMode={setMode}
+      />
 
       <Controls
         playerCount={playerCount}
