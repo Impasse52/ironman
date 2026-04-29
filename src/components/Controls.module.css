@@ -121,3 +121,9 @@
   color: var(--roa-gold);
   background: rgba(245, 166, 35, 0.1);
 }
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
