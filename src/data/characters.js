@@ -10,7 +10,7 @@ export const ROA2_CHARS = [
   { id: 'fleet', name: 'Fleet', icon: './icons/roa2/Fleet.png' },
   { id: 'forsburn', name: 'Forsburn', icon: './icons/roa2/Forsburn.png' },
   { id: 'galvan', name: 'Galvan', icon: './icons/roa2/Galvan.png' },
-  { id: 'gouie', name: 'Gouie', icon: './icons/roa2/Gouie.png' },
+  { id: 'gouie', name: 'Gouie', icon: './icons/roa2/Gouie.jpg' },
   { id: 'kragg', name: 'Kragg', icon: './icons/roa2/Kragg.png' },
   { id: 'loxodont', name: 'Loxodont', icon: './icons/roa2/Loxodont.png' },
   { id: 'lareina', name: 'La Reina', icon: './icons/roa2/Reina.png' },
